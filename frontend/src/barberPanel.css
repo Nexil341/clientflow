@@ -1,0 +1,309 @@
+.barber-login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background:
+        radial-gradient(circle at top right, #29200d 0%, transparent 35%),
+        #0b0b0b;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 45px;
+    background: #151515;
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+}
+
+.login-eyebrow,
+.panel-eyebrow {
+    color: #caa24d;
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.login-card h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.login-description {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 15px;
+    background: #101010;
+    border: 1px solid #333;
+    color: white;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #caa24d;
+}
+
+.login-button {
+    width: 100%;
+    padding: 17px;
+    background: #caa24d;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.login-button:disabled {
+    opacity: 0.5;
+}
+
+.panel-message {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #caa24d;
+    color: #caa24d;
+}
+
+.barber-panel {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top right, #29200d 0%, transparent 30%),
+        #0b0b0b;
+}
+
+.panel-header {
+    padding: 35px 7%;
+    border-bottom: 1px solid #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-header h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin: 10px 0 0;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.refresh-button,
+.logout-button {
+    padding: 13px 18px;
+    background: transparent;
+    border: 1px solid #444;
+    color: #aaa;
+}
+
+.refresh-button:hover {
+    border-color: #caa24d;
+    color: #caa24d;
+}
+
+.logout-button:hover {
+    border-color: #b34b4b;
+    color: #b34b4b;
+}
+
+.appointments-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.appointments-header span {
+    color: #caa24d;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.appointments-header h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.appointment-count {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #caa24d;
+    color: #caa24d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment-card {
+    background: #151515;
+    border: 1px solid #2d2d2d;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 150px 1fr auto;
+    gap: 25px;
+    align-items: center;
+}
+
+.appointment-time {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.appointment-time strong {
+    font-size: 16px;
+}
+
+.appointment-time span {
+    color: #caa24d;
+    font-size: 24px;
+}
+
+.appointment-info h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.appointment-info p {
+    margin: 0 0 12px;
+    color: #caa24d;
+}
+
+.customer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #777;
+    font-size: 13px;
+}
+
+.appointment-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.appointment-actions button {
+    padding: 9px 12px;
+    background: transparent;
+    border: 1px solid #444;
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.appointment-actions button:hover {
+    border-color: #caa24d;
+    color: #caa24d;
+}
+
+.appointment-actions .cancel:hover {
+    border-color: #c88b4b;
+    color: #c88b4b;
+}
+
+.appointment-actions .delete:hover {
+    border-color: #b34b4b;
+    color: #b34b4b;
+}
+
+.status {
+    padding: 7px 10px;
+    border: 1px solid #555;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.status.pending {
+    color: #caa24d;
+    border-color: #caa24d;
+}
+
+.status.confirmed {
+    color: #78b978;
+    border-color: #78b978;
+}
+
+.status.cancelled {
+    color: #b34b4b;
+    border-color: #b34b4b;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    border: 1px solid #2d2d2d;
+    background: #151515;
+}
+
+.empty-state h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.empty-state p {
+    color: #777;
+}
+
+@media (max-width: 850px) {
+    .appointment-card {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+    .panel-header {
+        padding: 25px 20px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .panel-header h1 {
+        font-size: 32px;
+    }
+
+    .header-actions {
+        width: 100%;
+    }
+
+    .header-actions button {
+        flex: 1;
+    }
+
+    .login-card {
+        padding: 30px 20px;
+    }
+}
